@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:reference_parent",
+ "creation": "2024-08-12 08:44:14.697796",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "table_lamination",
+  "section_break_kkvp",
+  "column_break_ignd",
+  "column_break_hpjb",
+  "column_break_weua",
+  "total_cost_of_mixed_amount",
+  "column_break_nfhm",
+  "total_solvent_kg",
+  "section_break_vmyc",
+  "column_break_fidz",
+  "reference_parent",
+  "reference_parent_parent",
+  "back",
+  "column_break_yoyz",
+  "cost_of_solid_glue_1_kg",
+  "coat_weight",
+  "cost_of_solid_glue_1_m2",
+  "cost_per_meter"
+ ],
+ "fields": [
+  {
+   "fieldname": "table_lamination",
+   "fieldtype": "Table",
+   "options": "Lamination"
+  },
+  {
+   "fieldname": "section_break_kkvp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ignd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hpjb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_weua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost_of_mixed_amount",
+   "fieldtype": "Data",
+   "label": "Total Cost of Mixed Amount",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nfhm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_solvent_kg",
+   "fieldtype": "Data",
+   "label": "Total Solvent Kg",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vmyc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_fidz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yoyz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_of_solid_glue_1_kg",
+   "fieldtype": "Data",
+   "label": "Cost of Solid Glue 1 Kg",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "coat_weight",
+   "fieldtype": "Data",
+   "label": "Coat Weight (g)",
+   "length": 20
+  },
+  {
+   "fieldname": "cost_of_solid_glue_1_m2",
+   "fieldtype": "Data",
+   "label": "Cost of Solid Glue 1 M2",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost_per_meter",
+   "fieldtype": "Data",
+   "label": "Cost Per Meter",
+   "length": 20
+  },
+  {
+   "fieldname": "reference_parent",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "reference_parent",
+   "length": 60,
+   "unique": 1
+  },
+  {
+   "fieldname": "reference_parent_parent",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "reference_parent_parent",
+   "length": 60
+  },
+  {
+   "fieldname": "back",
+   "fieldtype": "Button",
+   "label": "<i class=\"fa fa-arrow-left\"></i> Back"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-14 13:56:05.952060",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Material Processing Detail",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Costing Accessories User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

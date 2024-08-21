@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-29 15:25:50.799475",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "activity",
+  "minute",
+  "hours",
+  "column_break_wmic",
+  "frequency",
+  "remarks",
+  "number_people",
+  "man_hours"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "minute",
+   "fieldtype": "Data",
+   "label": "Minute"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Data",
+   "label": "Hours"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Data",
+   "label": "Frequency"
+  },
+  {
+   "fieldname": "number_people",
+   "fieldtype": "Data",
+   "label": "Number People"
+  },
+  {
+   "fieldname": "man_hours",
+   "fieldtype": "Data",
+   "label": "Man Hours"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_wmic",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-02 17:26:54.565117",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Overhead",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

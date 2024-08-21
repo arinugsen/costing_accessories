@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:article",
+ "creation": "2024-08-01 09:18:47.777795",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "in_house_article",
+  "supplier",
+  "article",
+  "price_per_yard",
+  "price_per_meter",
+  "column_break_gdqh",
+  "cuttable_width",
+  "composition",
+  "gsm",
+  "yarn_type",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Master Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Article",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "price_per_yard",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Price / Yard"
+  },
+  {
+   "fieldname": "price_per_meter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Price / Meter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gdqh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cuttable_width",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cuttable Width"
+  },
+  {
+   "fieldname": "composition",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Composition"
+  },
+  {
+   "fieldname": "gsm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Gsm"
+  },
+  {
+   "fieldname": "yarn_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Yarn Type"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "in_house_article",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "In House Article"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-15 13:25:40.676149",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Fabric Price",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Costing Accessories User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Costing Accessories MD User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

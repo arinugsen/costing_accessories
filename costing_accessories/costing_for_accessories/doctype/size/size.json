@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:size",
+ "creation": "2024-07-19 10:13:14.298494",
+ "default_view": "Report",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "size",
+  "no",
+  "column_break_feyi",
+  "section_break_rdyj",
+  "kd_l",
+  "pd_l",
+  "md_l",
+  "column_break_vwcn",
+  "kd_w",
+  "pd_w",
+  "md_w"
+ ],
+ "fields": [
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size",
+   "unique": 1
+  },
+  {
+   "fieldname": "kd_l",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Kegel Dimension (Cm) L"
+  },
+  {
+   "fieldname": "kd_w",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Kegel Dimension (Cm) W"
+  },
+  {
+   "fieldname": "pd_l",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Panel Dimension (Cm) L"
+  },
+  {
+   "fieldname": "pd_w",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Panel Dimension (Cm) W"
+  },
+  {
+   "fieldname": "md_l",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Material Dimension (Cm) L"
+  },
+  {
+   "fieldname": "md_w",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Material Dimension (Cm) W"
+  },
+  {
+   "fieldname": "section_break_rdyj",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "column_break_vwcn",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "column_break_feyi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no",
+   "fieldtype": "Data",
+   "label": "No"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-14 13:39:56.993279",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Size",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Costing Accessories User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

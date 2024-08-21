@@ -1,0 +1,349 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:COST-{article}-{#####}",
+ "creation": "2024-08-08 10:28:14.393743",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "article",
+  "style",
+  "column_break_opay",
+  "revision",
+  "buyer",
+  "column_break_qjnj",
+  "size_range_1",
+  "size_range_2",
+  "size_range",
+  "column_break_mixd",
+  "pairs_per_meter",
+  "cookie_pairs_per_meter",
+  "section_break_dbvf",
+  "total_raw_material_cost",
+  "lamination_cost",
+  "lamination_wastage",
+  "total_lamination_cost",
+  "column_break_gqsp",
+  "type_overhead",
+  "total_overhead_cost",
+  "manufactur_cost",
+  "manufactur_wastage",
+  "total_manufactur_cost",
+  "column_break_btml",
+  "packaging_cost_percent",
+  "total_packaging_cost",
+  "transport_cost_percent",
+  "total_transport_cost",
+  "total_mold_cost",
+  "column_break_pism",
+  "total_cost",
+  "profit_percent",
+  "cup_price",
+  "final_price",
+  "raw_material_section",
+  "table_raw_material",
+  "material_processing_section",
+  "table_material_processing",
+  "section_break_fqdo",
+  "heading_gara"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Article",
+   "length": 20,
+   "reqd": 1
+  },
+  {
+   "fieldname": "style",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Style",
+   "length": 20,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_opay",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Data",
+   "label": "Revision",
+   "length": 10
+  },
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Buyer/Customer",
+   "length": 50,
+   "options": "Master Buyer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qjnj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size_range_1",
+   "fieldtype": "Link",
+   "label": "Size Range 1",
+   "length": 10,
+   "options": "Size",
+   "reqd": 1
+  },
+  {
+   "fieldname": "size_range_2",
+   "fieldtype": "Link",
+   "label": "Size Range 2",
+   "length": 10,
+   "options": "Size",
+   "reqd": 1
+  },
+  {
+   "fieldname": "size_range",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size Range",
+   "length": 20,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mixd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pairs_per_meter",
+   "fieldtype": "Data",
+   "label": "Pairs/Meter",
+   "length": 10,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "cookie_pairs_per_meter",
+   "fieldtype": "Data",
+   "label": "Cookie Pairs/Meter",
+   "length": 10
+  },
+  {
+   "fieldname": "section_break_dbvf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_raw_material_cost",
+   "fieldtype": "Data",
+   "label": "Total Raw Material Cost",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "lamination_cost",
+   "fieldtype": "Data",
+   "label": "Lamination Cost",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "lamination_wastage",
+   "fieldtype": "Data",
+   "label": "Lamination Wastage (%)",
+   "length": 20
+  },
+  {
+   "fieldname": "total_lamination_cost",
+   "fieldtype": "Data",
+   "label": "Total Lamination Cost",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gqsp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_overhead",
+   "fieldtype": "Select",
+   "label": "Type Overhead",
+   "length": 20,
+   "options": "\nBasic\nPush Up\nInsert Wire\nSpacer\nManual Spray"
+  },
+  {
+   "fieldname": "total_overhead_cost",
+   "fieldtype": "Data",
+   "label": "Total Overhead Cost",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "manufactur_cost",
+   "fieldtype": "Data",
+   "label": "Manufacture Cost",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "manufactur_wastage",
+   "fieldtype": "Data",
+   "label": "Manufacture Wastage (%)",
+   "length": 20
+  },
+  {
+   "fieldname": "total_manufactur_cost",
+   "fieldtype": "Data",
+   "label": "Total Manufacture Cost",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_btml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "packaging_cost_percent",
+   "fieldtype": "Data",
+   "label": "Packaging Cost (%)",
+   "length": 20
+  },
+  {
+   "fieldname": "total_packaging_cost",
+   "fieldtype": "Data",
+   "label": "Total Packaging Cost",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "transport_cost_percent",
+   "fieldtype": "Data",
+   "label": "Transport Cost (%)",
+   "length": 20
+  },
+  {
+   "fieldname": "total_transport_cost",
+   "fieldtype": "Data",
+   "label": "Total Transport Cost",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_mold_cost",
+   "fieldtype": "Data",
+   "label": "Total Mold Cost",
+   "length": 20
+  },
+  {
+   "fieldname": "column_break_pism",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Cost",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "profit_percent",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Profit (%)",
+   "length": 20
+  },
+  {
+   "fieldname": "cup_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cup Price (USD)",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "final_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Final Price (USD)",
+   "length": 20,
+   "read_only": 1
+  },
+  {
+   "fieldname": "raw_material_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_raw_material",
+   "fieldtype": "Table",
+   "label": "Raw Material",
+   "options": "Raw Material"
+  },
+  {
+   "fieldname": "material_processing_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_material_processing",
+   "fieldtype": "Table",
+   "label": "Material Processing",
+   "options": "Material Processing"
+  },
+  {
+   "fieldname": "section_break_fqdo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "heading_gara",
+   "fieldtype": "Heading"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-15 08:14:59.086718",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Costing Accessories",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Costing Accessories User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

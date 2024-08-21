@@ -1,0 +1,326 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:COST-{article}-{#####}",
+ "creation": "2024-08-13 10:19:09.192521",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "article",
+  "style",
+  "column_break_jksn",
+  "revision",
+  "buyer",
+  "column_break_ypun",
+  "size_range_1",
+  "size_range_2",
+  "size_range",
+  "column_break_fpgj",
+  "pairs_per_meter",
+  "cookie_pairs_per_meter",
+  "section_break_hedn",
+  "total_raw_material_cost",
+  "lamination_cost",
+  "lamination_wastage",
+  "total_lamination_cost",
+  "column_break_kfza",
+  "type_overhead",
+  "total_overhead_cost",
+  "manufactur_cost",
+  "manufactur_wastage",
+  "total_manufactur_cost",
+  "column_break_hqsj",
+  "packaging_cost_percent",
+  "total_packaging_cost",
+  "transport_cost_percent",
+  "total_transport_cost",
+  "total_mold_cost",
+  "column_break_acud",
+  "total_cost",
+  "profit_percent",
+  "cup_price",
+  "final_price",
+  "section_break_dzfo",
+  "table_raw_material",
+  "section_break_xqwj",
+  "table_material_processing",
+  "section_break_cgdx",
+  "heading_lbqb",
+  "reference_doc_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Data",
+   "label": "Article",
+   "length": 20
+  },
+  {
+   "fieldname": "style",
+   "fieldtype": "Data",
+   "label": "Style",
+   "length": 20
+  },
+  {
+   "fieldname": "column_break_jksn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Data",
+   "label": "Revision",
+   "length": 10
+  },
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "label": "Buyer/Customer",
+   "length": 50,
+   "options": "Master Buyer"
+  },
+  {
+   "fieldname": "column_break_ypun",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size_range_1",
+   "fieldtype": "Link",
+   "label": "Size Range 1",
+   "length": 10,
+   "options": "Size"
+  },
+  {
+   "fieldname": "size_range_2",
+   "fieldtype": "Link",
+   "label": "Size Range 2",
+   "length": 10,
+   "options": "Size"
+  },
+  {
+   "fieldname": "size_range",
+   "fieldtype": "Data",
+   "label": "Size Range",
+   "length": 20
+  },
+  {
+   "fieldname": "column_break_fpgj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pairs_per_meter",
+   "fieldtype": "Data",
+   "label": "Pairs/Meter",
+   "length": 10
+  },
+  {
+   "fieldname": "cookie_pairs_per_meter",
+   "fieldtype": "Data",
+   "label": "Cookie Pairs/Meter",
+   "length": 10
+  },
+  {
+   "fieldname": "section_break_hedn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_raw_material_cost",
+   "fieldtype": "Data",
+   "label": "Total Raw Material Cost",
+   "length": 20
+  },
+  {
+   "fieldname": "lamination_cost",
+   "fieldtype": "Data",
+   "label": "Lamination Cost",
+   "length": 20
+  },
+  {
+   "fieldname": "lamination_wastage",
+   "fieldtype": "Data",
+   "label": "Lamination Wastage (%)",
+   "length": 20
+  },
+  {
+   "fieldname": "total_lamination_cost",
+   "fieldtype": "Data",
+   "label": "Total Lamination Cost",
+   "length": 20
+  },
+  {
+   "fieldname": "column_break_kfza",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_overhead",
+   "fieldtype": "Select",
+   "label": "Type Overhead",
+   "length": 20,
+   "options": "\nBasic\nPush Up\nInsert Wire\nSpacer\nManual Spray"
+  },
+  {
+   "fieldname": "total_overhead_cost",
+   "fieldtype": "Data",
+   "label": "Total Overhead Cost",
+   "length": 20
+  },
+  {
+   "fieldname": "manufactur_cost",
+   "fieldtype": "Data",
+   "label": "Manufacture Cost",
+   "length": 20
+  },
+  {
+   "fieldname": "column_break_hqsj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_acud",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manufactur_wastage",
+   "fieldtype": "Data",
+   "label": "Manufacture Wastage (%)",
+   "length": 20
+  },
+  {
+   "fieldname": "total_manufactur_cost",
+   "fieldtype": "Data",
+   "label": "Total Manufacture Cost",
+   "length": 20
+  },
+  {
+   "fieldname": "packaging_cost_percent",
+   "fieldtype": "Data",
+   "label": "Packaging Cost (%)",
+   "length": 20
+  },
+  {
+   "fieldname": "total_packaging_cost",
+   "fieldtype": "Data",
+   "label": "Total Packaging Cost",
+   "length": 20
+  },
+  {
+   "fieldname": "transport_cost_percent",
+   "fieldtype": "Data",
+   "label": "Transport Cost (%)",
+   "length": 20
+  },
+  {
+   "fieldname": "total_transport_cost",
+   "fieldtype": "Data",
+   "label": "Total Transport Cost",
+   "length": 20
+  },
+  {
+   "fieldname": "total_mold_cost",
+   "fieldtype": "Data",
+   "label": "Total Mold Cost",
+   "length": 20
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Data",
+   "label": "Total Cost",
+   "length": 20
+  },
+  {
+   "fieldname": "profit_percent",
+   "fieldtype": "Data",
+   "label": "Profit (%)",
+   "length": 20
+  },
+  {
+   "fieldname": "cup_price",
+   "fieldtype": "Data",
+   "label": "Cup Price (USD)",
+   "length": 20
+  },
+  {
+   "fieldname": "final_price",
+   "fieldtype": "Data",
+   "label": "Final Price (USD)",
+   "length": 20
+  },
+  {
+   "fieldname": "section_break_dzfo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_raw_material",
+   "fieldtype": "Table",
+   "label": "Raw Material",
+   "options": "Raw Material Manual"
+  },
+  {
+   "fieldname": "section_break_xqwj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_material_processing",
+   "fieldtype": "Table",
+   "label": "Material Processing",
+   "options": "Material Processing Manual"
+  },
+  {
+   "fieldname": "section_break_cgdx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "heading_lbqb",
+   "fieldtype": "Heading"
+  },
+  {
+   "fieldname": "reference_doc_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "reference_doc_name",
+   "length": 60
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-15 08:15:38.282815",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Costing Accessories Manual",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Costing Accessories User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

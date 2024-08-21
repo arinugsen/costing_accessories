@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{article} {thickness}MM",
+ "creation": "2024-08-01 09:32:19.304936",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "in_house_article",
+  "supplier",
+  "article",
+  "thickness",
+  "column_break_vdry",
+  "type_of_price",
+  "price_per_mm",
+  "price_custom",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "in_house_article",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "In House Article"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Master Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Article",
+   "reqd": 1
+  },
+  {
+   "fieldname": "thickness",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Thickness (MM)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price_per_mm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Price / MM"
+  },
+  {
+   "fieldname": "column_break_vdry",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "default": "Per Mili Meter",
+   "fieldname": "type_of_price",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type of Price",
+   "options": "Per Mili Meter\nCustom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price_custom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Price"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-15 13:25:28.722685",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Foam Price",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Costing Accessories User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Costing Accessories MD User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

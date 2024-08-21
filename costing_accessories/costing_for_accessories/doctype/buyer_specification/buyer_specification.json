@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{buyer}_{style}_{article}_{size_range}",
+ "creation": "2024-07-19 13:10:16.666569",
+ "default_view": "Report",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fg_definition_section",
+  "buyer",
+  "style",
+  "article",
+  "column_break_gdbi",
+  "inner_liner",
+  "inner_layer",
+  "outer_liner",
+  "column_break_htgy",
+  "shape",
+  "remark",
+  "section_break_onkn",
+  "column_break_oksa",
+  "size_range",
+  "column_break_algk",
+  "size_range_1",
+  "column_break_eqaw",
+  "size_range_2"
+ ],
+ "fields": [
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Data",
+   "label": "Buyer",
+   "unique": 1
+  },
+  {
+   "fieldname": "style",
+   "fieldtype": "Data",
+   "label": "Style"
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Data",
+   "label": "Article"
+  },
+  {
+   "fieldname": "inner_liner",
+   "fieldtype": "Data",
+   "label": "Inner Liner"
+  },
+  {
+   "fieldname": "inner_layer",
+   "fieldtype": "Data",
+   "label": "Inner Layer"
+  },
+  {
+   "fieldname": "outer_liner",
+   "fieldtype": "Data",
+   "label": "Outer Liner"
+  },
+  {
+   "fieldname": "size_range",
+   "fieldtype": "Data",
+   "label": "Size Range"
+  },
+  {
+   "fieldname": "shape",
+   "fieldtype": "Data",
+   "label": "Shape"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "fg_definition_section",
+   "fieldtype": "Section Break",
+   "label": "FG Definition"
+  },
+  {
+   "fieldname": "column_break_gdbi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_htgy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_onkn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "size_range_1",
+   "fieldtype": "Select",
+   "label": "Size Range 1",
+   "options": "XS\nS\nM\nL\nXL"
+  },
+  {
+   "fieldname": "column_break_eqaw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size_range_2",
+   "fieldtype": "Select",
+   "label": "Size Range 2",
+   "options": "XS\nS\nM\nL\nXL"
+  },
+  {
+   "fieldname": "column_break_oksa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_algk",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-22 17:01:52.285748",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Buyer Specification",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

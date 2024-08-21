@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:COST-{YY-MM-DD}-{buyer}-{style}-{article}-{size_range}-{#####}",
+ "creation": "2024-07-20 14:07:15.730734",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "classification",
+  "buyer_specification",
+  "pairs_per_meter",
+  "column_break_nomw",
+  "buyer",
+  "style",
+  "article",
+  "size_range"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "classification",
+   "fieldtype": "Data",
+   "label": "Classification"
+  },
+  {
+   "fetch_from": "buyer_specification.size_range",
+   "fieldname": "size_range",
+   "fieldtype": "Link",
+   "label": "Size Range",
+   "options": "Buyer Specification"
+  },
+  {
+   "fieldname": "column_break_nomw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "buyer_specification.buyer",
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "label": "Buyer/Customer",
+   "options": "Buyer Specification"
+  },
+  {
+   "fetch_from": "buyer_specification.style",
+   "fieldname": "style",
+   "fieldtype": "Link",
+   "label": "Style",
+   "options": "Buyer Specification"
+  },
+  {
+   "fetch_from": "buyer_specification.article",
+   "fieldname": "article",
+   "fieldtype": "Link",
+   "label": "Article",
+   "options": "Buyer Specification"
+  },
+  {
+   "fieldname": "buyer_specification",
+   "fieldtype": "Link",
+   "label": "Buyer Specification",
+   "options": "Buyer Specification"
+  },
+  {
+   "fieldname": "pairs_per_meter",
+   "fieldtype": "Data",
+   "label": "Pairs / M"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-29 14:55:41.690000",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Costing",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

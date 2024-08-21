@@ -1,0 +1,1361 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{article}-{style}-{size_range}-{overhead_type}-{#####}",
+ "creation": "2024-07-20 14:07:15.730734",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "article",
+  "column_break_nomw",
+  "buyer",
+  "revision",
+  "column_break_nybu",
+  "style",
+  "section_break_wzlt",
+  "size_range_1",
+  "size_range_2",
+  "column_break_uglk",
+  "size_range",
+  "column_break_touw",
+  "pairs_per_meter",
+  "cookie_pairs__m",
+  "inner_liner_tab",
+  "inner_liner_section",
+  "article_inner_liner",
+  "column_break_tdaq",
+  "cost_per_meter_inner_liner",
+  "column_break_qhwu",
+  "cost_per_cup_inner_liner",
+  "lamination_1_tab",
+  "lamination_1_section",
+  "table_lamination1",
+  "section_break_qxsr",
+  "column_break_uzmb",
+  "column_break_kbxk",
+  "total_mix_amount_kg",
+  "column_break_lpgm",
+  "total_cost_of_mixed_amount",
+  "column_break_rtpk",
+  "total_solvent_kg",
+  "section_break_qgzi",
+  "cost_solid_glue_1_kg_l1",
+  "cost_solid_glue_1_m2_l1",
+  "column_break_hwer",
+  "coat_weight_l1",
+  "cost_of_glue_for_material_1_mtr_length_l1",
+  "cost_per_cup_l1",
+  "inner_material_1_tab",
+  "inner_material_1_section",
+  "article_im1",
+  "column_break_zrtt",
+  "cost_per_meter_im1",
+  "column_break_onpm",
+  "cost_per_cup_im1",
+  "lamination_2_tab",
+  "lamination_2_section",
+  "table_lamination2",
+  "section_break_mqhw",
+  "column_break_eprv",
+  "column_break_lxyx",
+  "total_mix_amount_kg_l2",
+  "column_break_rfxi",
+  "total_cost_of_mixed_amount_l2",
+  "column_break_hgle",
+  "total_solvent_kg_l2",
+  "section_break_jqvx",
+  "cost_solid_glue_1_kg_l2",
+  "cost_solid_glue_1_m2_l2",
+  "column_break_dakp",
+  "coat_weight_l2",
+  "cost_of_glue_for_material_1_mtr_length_l2",
+  "cost_per_cup_l2",
+  "inner_material_2_tab",
+  "im_1_section",
+  "type_im2",
+  "column_break_qdlr",
+  "column_break_ttrd",
+  "section_break_xjyo",
+  "article_im2",
+  "column_break_lhzk",
+  "cost_per_meter_im2",
+  "column_break_hecr",
+  "cost_per_cup_im2",
+  "lamination_3_tab",
+  "lamination_3_section",
+  "table_lamination3",
+  "section_break_bbya",
+  "column_break_qvyk",
+  "column_break_tdfq",
+  "total_mix_amount_kg_l3",
+  "column_break_wnpc",
+  "total_cost_of_mixed_amount_l3",
+  "column_break_dbga",
+  "total_solvent_kg_l3",
+  "section_break_flpd",
+  "cost_solid_glue_1_kg_l3",
+  "cost_solid_glue_1_m2_l3",
+  "column_break_jasb",
+  "coat_weight_l3",
+  "cost_of_glue_for_material_1_mtr_length_l3",
+  "cost_per_cup_l3",
+  "inner_material_3_tab",
+  "im3_section",
+  "type_im3",
+  "column_break_qtmu",
+  "column_break_blxs",
+  "section_break_wmqs",
+  "article_im3",
+  "column_break_nbif",
+  "cost_per_meter_im3",
+  "column_break_brml",
+  "cost_per_cup_im3",
+  "lamination_4_tab",
+  "lamination_4_section",
+  "table_lamination4",
+  "section_break_tfif",
+  "column_break_waji",
+  "column_break_lole",
+  "total_mix_amount_kg_l4",
+  "column_break_hcby",
+  "total_cost_of_mixed_amount_l4",
+  "column_break_aumd",
+  "total_solvent_kg_l4",
+  "section_break_obqv",
+  "cost_solid_glue_1_kg_l4",
+  "cost_solid_glue_1_m2_l4",
+  "column_break_winh",
+  "coat_weight_l4",
+  "cost_of_glue_for_material_1_mtr_length_l4",
+  "cost_per_cup_l4",
+  "inner_material_4_tab",
+  "im4_section",
+  "type_im4",
+  "column_break_olkz",
+  "column_break_akkj",
+  "section_break_qesi",
+  "article_im4",
+  "column_break_gxht",
+  "cost_per_meter_im4",
+  "column_break_uegk",
+  "cost_per_cup_im4",
+  "lamination_5_tab",
+  "lamination_5_section",
+  "table_lamination5",
+  "section_break_aovr",
+  "column_break_fnxb",
+  "column_break_pltu",
+  "total_mix_amount_kg_l5",
+  "column_break_ohvd",
+  "total_cost_of_mixed_amount_l5",
+  "column_break_izyh",
+  "total_solvent_kg_l5",
+  "section_break_lzsi",
+  "cost_solid_glue_1_kg_l5",
+  "cost_solid_glue_1_m2_l5",
+  "column_break_zllu",
+  "coat_weight_l5",
+  "cost_of_glue_for_material_1_mtr_length_l5",
+  "cost_per_cup_l5",
+  "outer_material_tab",
+  "outer_material_section",
+  "article_im5",
+  "column_break_sakh",
+  "cost_per_meter_im5",
+  "column_break_ajlk",
+  "cost_per_cup_im5",
+  "lamination_6_tab",
+  "lamination_6_section",
+  "table_lamination6",
+  "section_break_qzri",
+  "column_break_zrnq",
+  "column_break_slhx",
+  "total_mix_amount_kg_l6",
+  "column_break_dceq",
+  "total_cost_of_mixed_amount_l6",
+  "column_break_zmoh",
+  "total_solvent_kg_l6",
+  "section_break_rugz",
+  "cost_solid_glue_1_kg_l6",
+  "cost_solid_glue_1_m2_l6",
+  "column_break_tvnz",
+  "coat_weight_l6",
+  "cost_of_glue_for_material_1_mtr_length_l6",
+  "cost_per_cup_l6",
+  "outer_liner_tab",
+  "outer_liner_section",
+  "article_ol",
+  "column_break_loyh",
+  "cost_per_meter_ol",
+  "column_break_nfvu",
+  "cost_per_cup_ol",
+  "tab_12_tab",
+  "total_raw_material_cost_per_cup",
+  "column_break_httz",
+  "section_break_orhy",
+  "total_lamination",
+  "total_lamination_with_wastage",
+  "column_break_mdbo",
+  "lamination_wastage",
+  "total_lamination_cost",
+  "overhead_cost_tab",
+  "overhead_type",
+  "column_break_pitz",
+  "overhead_cost",
+  "section_break_kllv",
+  "column_break_iepc",
+  "table_overhead",
+  "section_break_cjcm",
+  "total_process_time_hours",
+  "total_process_time_minute",
+  "add_wastage_process_time",
+  "wastage_oh",
+  "column_break_nfhh",
+  "total_time_for_all_pairs",
+  "total_time_for_1_pairs",
+  "overhead_cost_per_minute",
+  "overhead_cost_per_cup_pair",
+  "tab_14_tab",
+  "manufacturing_cost",
+  "wastage_manufacture",
+  "column_break_yzqg",
+  "wastage_manufacture_percent",
+  "manufacturing_cost_with_wastage",
+  "section_break_cecd",
+  "packaging_cost_percent",
+  "transport_cost_percent",
+  "column_break_tpxw",
+  "packaging_cost",
+  "transport_cost",
+  "mold_cost",
+  "section_break_oesm",
+  "profit_percent",
+  "profit",
+  "column_break_ajns",
+  "total_cost",
+  "cup_price",
+  "finalized_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "buyer_specification.size_range",
+   "fieldname": "size_range",
+   "fieldtype": "Data",
+   "label": "Size Range"
+  },
+  {
+   "fieldname": "column_break_nomw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "buyer_specification.buyer",
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "label": "Buyer/Customer",
+   "options": "Master Buyer"
+  },
+  {
+   "fetch_from": "buyer_specification.style",
+   "fieldname": "style",
+   "fieldtype": "Data",
+   "label": "Style"
+  },
+  {
+   "fetch_from": "buyer_specification.article",
+   "fieldname": "article",
+   "fieldtype": "Data",
+   "label": "Article"
+  },
+  {
+   "fieldname": "pairs_per_meter",
+   "fieldtype": "Data",
+   "label": "Pairs / M"
+  },
+  {
+   "fieldname": "cookie_pairs__m",
+   "fieldtype": "Data",
+   "label": "Cookie Pairs / M"
+  },
+  {
+   "fieldname": "column_break_nybu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inner_liner_section",
+   "fieldtype": "Section Break",
+   "label": "Inner Liner"
+  },
+  {
+   "fieldname": "column_break_tdaq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Data",
+   "label": "Revision"
+  },
+  {
+   "fieldname": "column_break_qhwu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lamination_1_section",
+   "fieldtype": "Section Break",
+   "label": "Lamination 1"
+  },
+  {
+   "fieldname": "section_break_qgzi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hwer",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inner_material_1_section",
+   "fieldtype": "Section Break",
+   "label": "Inner Material 1"
+  },
+  {
+   "fieldname": "column_break_zrtt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inner_liner_tab",
+   "fieldtype": "Tab Break",
+   "label": "Inner Liner"
+  },
+  {
+   "fieldname": "lamination_1_tab",
+   "fieldtype": "Tab Break",
+   "label": "Lamination 1"
+  },
+  {
+   "fieldname": "inner_material_1_tab",
+   "fieldtype": "Tab Break",
+   "label": "Inner Material 1"
+  },
+  {
+   "fieldname": "lamination_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Lamination 2"
+  },
+  {
+   "fieldname": "lamination_2_section",
+   "fieldtype": "Section Break",
+   "label": "Lamination 2"
+  },
+  {
+   "fieldname": "section_break_jqvx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_dakp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inner_material_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Inner Material 2"
+  },
+  {
+   "fieldname": "column_break_lhzk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hecr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lamination_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Lamination 3"
+  },
+  {
+   "fieldname": "lamination_3_section",
+   "fieldtype": "Section Break",
+   "label": "Lamination 3"
+  },
+  {
+   "fieldname": "section_break_flpd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jasb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inner_material_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Inner Material 3"
+  },
+  {
+   "fieldname": "column_break_nbif",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_brml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lamination_4_tab",
+   "fieldtype": "Tab Break",
+   "label": "Lamination 4"
+  },
+  {
+   "fieldname": "lamination_4_section",
+   "fieldtype": "Section Break",
+   "label": "Lamination 4"
+  },
+  {
+   "fieldname": "section_break_obqv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_winh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inner_material_4_tab",
+   "fieldtype": "Tab Break",
+   "label": "Inner Material 4"
+  },
+  {
+   "fieldname": "outer_material_section",
+   "fieldtype": "Section Break",
+   "label": "Outer Material"
+  },
+  {
+   "fieldname": "column_break_gxht",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uegk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lamination_5_tab",
+   "fieldtype": "Tab Break",
+   "label": "Lamination 5"
+  },
+  {
+   "fieldname": "lamination_5_section",
+   "fieldtype": "Section Break",
+   "label": "Lamination 5"
+  },
+  {
+   "fieldname": "section_break_lzsi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zllu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_12_tab",
+   "fieldtype": "Tab Break",
+   "label": "Raw Material+Lamination Cost"
+  },
+  {
+   "fieldname": "total_lamination",
+   "fieldtype": "Data",
+   "label": "Total Lamination"
+  },
+  {
+   "fieldname": "lamination_wastage",
+   "fieldtype": "Data",
+   "label": "Lamination Wastage (%)"
+  },
+  {
+   "fieldname": "total_lamination_with_wastage",
+   "fieldtype": "Data",
+   "label": "Total Lamination with Wastage"
+  },
+  {
+   "fieldname": "column_break_httz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_orhy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_mdbo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_lamination_cost",
+   "fieldtype": "Data",
+   "label": "Total Lamination Cost"
+  },
+  {
+   "fieldname": "overhead_cost_tab",
+   "fieldtype": "Tab Break",
+   "label": "Overhead Cost"
+  },
+  {
+   "fieldname": "total_process_time_hours",
+   "fieldtype": "Data",
+   "label": "Total Process Time (Hours)"
+  },
+  {
+   "fieldname": "total_process_time_minute",
+   "fieldtype": "Data",
+   "label": "Total Process Time (Minute)"
+  },
+  {
+   "fieldname": "add_wastage_process_time",
+   "fieldtype": "Data",
+   "label": "Add Wastage Process Time"
+  },
+  {
+   "fieldname": "total_time_for_all_pairs",
+   "fieldtype": "Data",
+   "label": "Total Time for All Pairs"
+  },
+  {
+   "fieldname": "total_time_for_1_pairs",
+   "fieldtype": "Data",
+   "label": "Total Time for 1 Pairs"
+  },
+  {
+   "fieldname": "overhead_cost_per_cup_pair",
+   "fieldtype": "Data",
+   "label": "Overhead Cost per Cup Pair"
+  },
+  {
+   "fieldname": "article_inner_liner",
+   "fieldtype": "Link",
+   "label": "Article",
+   "options": "Fabric Price"
+  },
+  {
+   "fetch_from": "article_inner_liner.price_per_meter",
+   "fieldname": "cost_per_meter_inner_liner",
+   "fieldtype": "Data",
+   "label": "Cost Per Meter"
+  },
+  {
+   "fieldname": "cost_per_cup_inner_liner",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "columns": 10,
+   "fieldname": "table_lamination1",
+   "fieldtype": "Table",
+   "options": "Lamination"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_kg_l1",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 Kg"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_m2_l1",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 M2"
+  },
+  {
+   "fieldname": "coat_weight_l1",
+   "fieldtype": "Data",
+   "label": "Coat Weight (g)"
+  },
+  {
+   "fieldname": "cost_of_glue_for_material_1_mtr_length_l1",
+   "fieldtype": "Data",
+   "label": "Cost of Glue for Material 1 mtr length (USD)"
+  },
+  {
+   "fieldname": "article_im1",
+   "fieldtype": "Link",
+   "label": "Article",
+   "options": "Foam Price"
+  },
+  {
+   "fieldname": "cost_per_meter_im1",
+   "fieldtype": "Data",
+   "label": "Cost Per Meter"
+  },
+  {
+   "fieldname": "cost_per_cup_im1",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "columns": 10,
+   "fieldname": "table_lamination2",
+   "fieldtype": "Table",
+   "options": "Lamination 2"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_kg_l2",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 Kg"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_m2_l2",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 M2"
+  },
+  {
+   "fieldname": "coat_weight_l2",
+   "fieldtype": "Data",
+   "label": "Coat Weight (g)"
+  },
+  {
+   "fieldname": "cost_of_glue_for_material_1_mtr_length_l2",
+   "fieldtype": "Data",
+   "label": "Cost of Glue for Material 1 mtr length (USD)"
+  },
+  {
+   "fieldname": "article_im2",
+   "fieldtype": "Data",
+   "label": "Article"
+  },
+  {
+   "fieldname": "cost_per_meter_im2",
+   "fieldtype": "Data",
+   "label": "Cost Per Meter"
+  },
+  {
+   "fieldname": "cost_per_cup_im2",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "columns": 10,
+   "fieldname": "table_lamination3",
+   "fieldtype": "Table",
+   "options": "Lamination 3"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_kg_l3",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 Kg"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_m2_l3",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 M2"
+  },
+  {
+   "fieldname": "coat_weight_l3",
+   "fieldtype": "Data",
+   "label": "Coat Weight (g)"
+  },
+  {
+   "fieldname": "cost_of_glue_for_material_1_mtr_length_l3",
+   "fieldtype": "Data",
+   "label": "Cost of Glue for Material 1 mtr length (USD)"
+  },
+  {
+   "fieldname": "article_im3",
+   "fieldtype": "Data",
+   "label": "Article"
+  },
+  {
+   "fieldname": "cost_per_meter_im3",
+   "fieldtype": "Data",
+   "label": "Cost Per Meter"
+  },
+  {
+   "fieldname": "cost_per_cup_im3",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "fieldname": "table_lamination4",
+   "fieldtype": "Table",
+   "options": "Lamination 4"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_kg_l4",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 Kg"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_m2_l4",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 M2"
+  },
+  {
+   "fieldname": "coat_weight_l4",
+   "fieldtype": "Data",
+   "label": "Coat Weight (g)"
+  },
+  {
+   "fieldname": "cost_of_glue_for_material_1_mtr_length_l4",
+   "fieldtype": "Data",
+   "label": "Cost of Glue for Material 1 mtr length (USD)"
+  },
+  {
+   "fieldname": "article_im4",
+   "fieldtype": "Data",
+   "label": "Article"
+  },
+  {
+   "fieldname": "cost_per_meter_im4",
+   "fieldtype": "Data",
+   "label": "Cost Per Meter"
+  },
+  {
+   "fieldname": "cost_per_cup_im4",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "fieldname": "table_lamination5",
+   "fieldtype": "Table",
+   "options": "Lamination 5"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_kg_l5",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 Kg"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_m2_l5",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 M2"
+  },
+  {
+   "fieldname": "coat_weight_l5",
+   "fieldtype": "Data",
+   "label": "Coat Weight (g)"
+  },
+  {
+   "fieldname": "cost_of_glue_for_material_1_mtr_length_l5",
+   "fieldtype": "Data",
+   "label": "Cost of Glue for Material 1 mtr length (USD)"
+  },
+  {
+   "fieldname": "total_raw_material_cost_per_cup",
+   "fieldtype": "Data",
+   "label": "Total Raw Material Cost / Cup"
+  },
+  {
+   "fieldname": "wastage_oh",
+   "fieldtype": "Data",
+   "label": "Wastage"
+  },
+  {
+   "fieldname": "tab_14_tab",
+   "fieldtype": "Tab Break",
+   "label": "Cup Price"
+  },
+  {
+   "fieldname": "manufacturing_cost",
+   "fieldtype": "Data",
+   "label": "Manufacturing Cost"
+  },
+  {
+   "fieldname": "wastage_manufacture",
+   "fieldtype": "Data",
+   "label": "Wastage"
+  },
+  {
+   "fieldname": "packaging_cost",
+   "fieldtype": "Data",
+   "label": "Packaging Cost"
+  },
+  {
+   "fieldname": "section_break_oesm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "transport_cost",
+   "fieldtype": "Data",
+   "label": "Transport Cost"
+  },
+  {
+   "fieldname": "mold_cost",
+   "fieldtype": "Data",
+   "label": "Mold Cost"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Data",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "profit",
+   "fieldtype": "Data",
+   "label": "Profit"
+  },
+  {
+   "fieldname": "cup_price",
+   "fieldtype": "Data",
+   "label": "Cup Price"
+  },
+  {
+   "fieldname": "section_break_wzlt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "buyer_specification.size_range",
+   "fieldname": "size_range_1",
+   "fieldtype": "Link",
+   "label": "Size Range 1",
+   "options": "Size"
+  },
+  {
+   "fetch_from": "buyer_specification.size_range",
+   "fieldname": "size_range_2",
+   "fieldtype": "Link",
+   "label": "Size Range 2",
+   "options": "Size"
+  },
+  {
+   "fieldname": "column_break_uglk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_touw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outer_liner_tab",
+   "fieldtype": "Tab Break",
+   "label": "Outer Liner"
+  },
+  {
+   "fieldname": "outer_liner_section",
+   "fieldtype": "Section Break",
+   "label": "Outer Liner"
+  },
+  {
+   "fieldname": "article_ol",
+   "fieldtype": "Link",
+   "label": "Article",
+   "options": "Fabric Price"
+  },
+  {
+   "fieldname": "column_break_loyh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "article_ol.price_per_meter",
+   "fieldname": "cost_per_meter_ol",
+   "fieldtype": "Data",
+   "label": "Cost Per Meter"
+  },
+  {
+   "fieldname": "column_break_nfvu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "cost_per_cup_ol",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "fieldname": "profit_percent",
+   "fieldtype": "Data",
+   "label": "Profit %"
+  },
+  {
+   "fieldname": "section_break_qxsr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_mix_amount_kg",
+   "fieldtype": "Data",
+   "label": "Total Mix Amount Kg"
+  },
+  {
+   "fieldname": "column_break_lpgm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost_of_mixed_amount",
+   "fieldtype": "Data",
+   "label": "Total Cost of Mixed Amount"
+  },
+  {
+   "fieldname": "column_break_rtpk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_solvent_kg",
+   "fieldtype": "Data",
+   "label": "Total Solvent Kg"
+  },
+  {
+   "fieldname": "column_break_onpm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kbxk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mqhw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_mix_amount_kg_l2",
+   "fieldtype": "Data",
+   "label": "Total Mix Amount Kg"
+  },
+  {
+   "fieldname": "column_break_rfxi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost_of_mixed_amount_l2",
+   "fieldtype": "Data",
+   "label": "Total Cost of Mixed Amount"
+  },
+  {
+   "fieldname": "column_break_hgle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_solvent_kg_l2",
+   "fieldtype": "Data",
+   "label": "Total Solvent Kg"
+  },
+  {
+   "fieldname": "section_break_bbya",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_mix_amount_kg_l3",
+   "fieldtype": "Data",
+   "label": "Total Mix Amount Kg"
+  },
+  {
+   "fieldname": "column_break_wnpc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost_of_mixed_amount_l3",
+   "fieldtype": "Data",
+   "label": "Total Cost of Mixed Amount"
+  },
+  {
+   "fieldname": "column_break_dbga",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_solvent_kg_l3",
+   "fieldtype": "Data",
+   "label": "Total Solvent Kg"
+  },
+  {
+   "fieldname": "section_break_tfif",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_mix_amount_kg_l4",
+   "fieldtype": "Data",
+   "label": "Total Mix Amount Kg"
+  },
+  {
+   "fieldname": "column_break_hcby",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost_of_mixed_amount_l4",
+   "fieldtype": "Data",
+   "label": "Total Cost of Mixed Amount"
+  },
+  {
+   "fieldname": "column_break_aumd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_solvent_kg_l4",
+   "fieldtype": "Data",
+   "label": "Total Solvent Kg"
+  },
+  {
+   "fieldname": "section_break_aovr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_mix_amount_kg_l5",
+   "fieldtype": "Data",
+   "label": "Total Mix Amount Kg"
+  },
+  {
+   "fieldname": "column_break_ohvd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost_of_mixed_amount_l5",
+   "fieldtype": "Data",
+   "label": "Total Cost of Mixed Amount"
+  },
+  {
+   "fieldname": "column_break_izyh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_solvent_kg_l5",
+   "fieldtype": "Data",
+   "label": "Total Solvent Kg"
+  },
+  {
+   "fieldname": "cost_per_cup_l1",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "fieldname": "cost_per_cup_l2",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "fieldname": "cost_per_cup_l3",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "fieldname": "cost_per_cup_l4",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "fieldname": "cost_per_cup_l5",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "fieldname": "manufacturing_cost_with_wastage",
+   "fieldtype": "Data",
+   "label": "Manufacturing Cost with Wastage"
+  },
+  {
+   "fieldname": "column_break_yzqg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wastage_manufacture_percent",
+   "fieldtype": "Data",
+   "label": "Add Wastage %"
+  },
+  {
+   "fieldname": "section_break_cecd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "packaging_cost_percent",
+   "fieldtype": "Data",
+   "label": "Packaging Cost %"
+  },
+  {
+   "fieldname": "transport_cost_percent",
+   "fieldtype": "Data",
+   "label": "Transport Cost %"
+  },
+  {
+   "fieldname": "column_break_tpxw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ajns",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overhead_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Basic\nPush Up\nInsert Wire\nSpacer\nManual Spray"
+  },
+  {
+   "fieldname": "table_overhead",
+   "fieldtype": "Table",
+   "options": "Overhead"
+  },
+  {
+   "fieldname": "overhead_cost_per_minute",
+   "fieldtype": "Data",
+   "label": "Overhead Cost / Minute"
+  },
+  {
+   "fieldname": "section_break_cjcm",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "column_break_nfhh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pitz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overhead_cost",
+   "fieldtype": "Data",
+   "label": "Overhead Cost"
+  },
+  {
+   "fieldname": "section_break_kllv",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "outer_material_tab",
+   "fieldtype": "Tab Break",
+   "hidden": 1,
+   "label": "Inner Material 5"
+  },
+  {
+   "fieldname": "article_im5",
+   "fieldtype": "Data",
+   "label": "Article"
+  },
+  {
+   "fieldname": "column_break_sakh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_per_meter_im5",
+   "fieldtype": "Data",
+   "label": "Cost Per Meter"
+  },
+  {
+   "fieldname": "column_break_ajlk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_per_cup_im5",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "fieldname": "lamination_6_tab",
+   "fieldtype": "Tab Break",
+   "hidden": 1,
+   "label": "Lamination 6"
+  },
+  {
+   "fieldname": "lamination_6_section",
+   "fieldtype": "Section Break",
+   "label": "Lamination 6"
+  },
+  {
+   "fieldname": "table_lamination6",
+   "fieldtype": "Table",
+   "options": "Lamination 6"
+  },
+  {
+   "fieldname": "section_break_qzri",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_mix_amount_kg_l6",
+   "fieldtype": "Data",
+   "label": "Total Mix Amount Kg"
+  },
+  {
+   "fieldname": "column_break_dceq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost_of_mixed_amount_l6",
+   "fieldtype": "Data",
+   "label": "Total Cost of Mixed Amount"
+  },
+  {
+   "fieldname": "column_break_zmoh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_solvent_kg_l6",
+   "fieldtype": "Data",
+   "label": "Total Solvent Kg"
+  },
+  {
+   "fieldname": "im_1_section",
+   "fieldtype": "Section Break",
+   "label": "Cookie / Wire"
+  },
+  {
+   "fieldname": "type_im2",
+   "fieldtype": "Select",
+   "label": "Type of Inner Material",
+   "options": "\nCookie\nWire"
+  },
+  {
+   "fieldname": "section_break_xjyo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_rugz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_kg_l6",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 Kg"
+  },
+  {
+   "fieldname": "cost_solid_glue_1_m2_l6",
+   "fieldtype": "Data",
+   "label": "Cost Solid Glue 1 M2"
+  },
+  {
+   "fieldname": "column_break_tvnz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coat_weight_l6",
+   "fieldtype": "Data",
+   "label": "Coat Weight (g)"
+  },
+  {
+   "fieldname": "cost_of_glue_for_material_1_mtr_length_l6",
+   "fieldtype": "Data",
+   "label": "Cost of Glue for Material 1 mtr length (USD)"
+  },
+  {
+   "fieldname": "cost_per_cup_l6",
+   "fieldtype": "Data",
+   "label": "Cost Per Cup"
+  },
+  {
+   "fieldname": "column_break_qdlr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ttrd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "im3_section",
+   "fieldtype": "Section Break",
+   "label": "Cookies / Wire"
+  },
+  {
+   "fieldname": "type_im3",
+   "fieldtype": "Select",
+   "label": "Type of Inner Material",
+   "options": "\nCookie\nWire"
+  },
+  {
+   "fieldname": "column_break_qtmu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_blxs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wmqs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "im4_section",
+   "fieldtype": "Section Break",
+   "label": "Cookies / Wire"
+  },
+  {
+   "fieldname": "type_im4",
+   "fieldtype": "Select",
+   "label": "Type of Inner Material",
+   "options": "\nCookie\nWire"
+  },
+  {
+   "fieldname": "column_break_olkz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_akkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qesi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "finalized_price",
+   "fieldtype": "Data",
+   "label": "Finalized Price"
+  },
+  {
+   "fieldname": "column_break_iepc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uzmb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_eprv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lxyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qvyk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tdfq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_waji",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lole",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fnxb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pltu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zrnq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_slhx",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-07 17:31:39.287046",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Costing",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RM-{type}-{classification}-{article}-{#####}",
+ "creation": "2024-08-13 09:18:58.796018",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "column_break_kukj",
+  "classification",
+  "article",
+  "column_break_rrbi",
+  "cost_per_meter",
+  "cost_per_cup"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Composition",
+   "length": 30,
+   "options": "\nInner Liner\nInner Material 1\nInner Material 2\nInner Material 3\nInner Material 4\nInner Material 5\nInner Material 6\nInner Material 7\nInner Material 8\nInner Material 9\nOuter Liner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kukj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "classification",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Classification",
+   "length": 20,
+   "options": "\nFabric\nFoam\nCookie\nTricot\nMetal Wire\nTpu Wire",
+   "reqd": 1
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Article",
+   "length": 20,
+   "options": "Material Article",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rrbi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_per_meter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cost Per Meter",
+   "length": 20
+  },
+  {
+   "fieldname": "cost_per_cup",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cost Per Cup",
+   "length": 20
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-13 09:30:24.111632",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Raw Material Manual",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

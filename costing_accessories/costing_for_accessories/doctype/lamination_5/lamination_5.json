@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-02 11:15:19.629830",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "price_per_kg",
+  "mix_amount_kg",
+  "cost_of_mixed_amount",
+  "column_break_wzay",
+  "solid_percent",
+  "solvent_percent",
+  "solvent_kg",
+  "solid_kg"
+ ],
+ "fields": [
+  {
+   "fetch_from": "price_per_kg.material_name",
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Material Price"
+  },
+  {
+   "fieldname": "mix_amount_kg",
+   "fieldtype": "Data",
+   "label": "Mix Amount Kg"
+  },
+  {
+   "fieldname": "solvent_kg",
+   "fieldtype": "Data",
+   "label": "Solvent Kg"
+  },
+  {
+   "fieldname": "column_break_wzay",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item.price_per_unit",
+   "fieldname": "price_per_kg",
+   "fieldtype": "Link",
+   "label": "Price per Kg",
+   "options": "Material Price"
+  },
+  {
+   "fieldname": "cost_of_mixed_amount",
+   "fieldtype": "Data",
+   "label": "Cost of Mixed Amount"
+  },
+  {
+   "fieldname": "solid_kg",
+   "fieldtype": "Data",
+   "label": "Solid Kg"
+  },
+  {
+   "fieldname": "solid_percent",
+   "fieldtype": "Data",
+   "label": "Solid %"
+  },
+  {
+   "fieldname": "solvent_percent",
+   "fieldtype": "Data",
+   "label": "Solvent %"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-05 08:39:37.829931",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Lamination 5",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

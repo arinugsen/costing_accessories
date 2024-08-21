@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "RMC.#####",
+ "creation": "2024-07-19 13:49:58.423941",
+ "default_view": "Report",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "consumption_section",
+  "size",
+  "section_break_wwwk",
+  "kd_l",
+  "pd_l",
+  "md_l",
+  "column_break_ojls",
+  "kd_w",
+  "pd_w",
+  "md_w",
+  "section_break_lxta",
+  "pq_l",
+  "consumption",
+  "qty_foam_cup_prs",
+  "column_break_rupt",
+  "pq_w",
+  "qty_per_m_prs",
+  "qty_foam_cup_per_m_prs"
+ ],
+ "fields": [
+  {
+   "fieldname": "consumption_section",
+   "fieldtype": "Section Break",
+   "label": "Consumption"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Link",
+   "label": "Size",
+   "options": "Size"
+  },
+  {
+   "fieldname": "kd_l",
+   "fieldtype": "Data",
+   "label": "Kegel Dimension (Cm) L"
+  },
+  {
+   "fieldname": "kd_w",
+   "fieldtype": "Data",
+   "label": "Kegel Dimension (Cm) W"
+  },
+  {
+   "fieldname": "pd_l",
+   "fieldtype": "Data",
+   "label": "Panel Dimension (Cm) L"
+  },
+  {
+   "fieldname": "pd_w",
+   "fieldtype": "Data",
+   "label": "Panel Dimension (Cm) W"
+  },
+  {
+   "fieldname": "md_l",
+   "fieldtype": "Data",
+   "label": "Material Dimension (Cm) L"
+  },
+  {
+   "fieldname": "md_w",
+   "fieldtype": "Data",
+   "label": "Material Dimension (Cm) W"
+  },
+  {
+   "fieldname": "pq_l",
+   "fieldtype": "Data",
+   "label": "Panel Qty L"
+  },
+  {
+   "fieldname": "pq_w",
+   "fieldtype": "Data",
+   "label": "Panel Qty W"
+  },
+  {
+   "fieldname": "consumption",
+   "fieldtype": "Data",
+   "label": "Consumption"
+  },
+  {
+   "fieldname": "qty_per_m_prs",
+   "fieldtype": "Data",
+   "label": "Qty/M (Prs)"
+  },
+  {
+   "default": "2",
+   "fieldname": "qty_foam_cup_prs",
+   "fieldtype": "Data",
+   "label": "Qty Foam Cup (Prs)"
+  },
+  {
+   "fieldname": "qty_foam_cup_per_m_prs",
+   "fieldtype": "Data",
+   "label": "Qty Foam Cup/M (Prs)"
+  },
+  {
+   "fieldname": "section_break_wwwk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ojls",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lxta",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_rupt",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-31 15:35:09.211705",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Raw Material Consumption",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

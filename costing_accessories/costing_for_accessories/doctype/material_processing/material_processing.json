@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MP-{type}-{type_rm}-{#####}",
+ "creation": "2024-08-08 14:20:23.071035",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "column_break_ptkk",
+  "type_rm",
+  "lamination_for",
+  "column_break_dnej",
+  "cost_per_meter",
+  "cost_per_cup",
+  "section_break_hnwx",
+  "detail",
+  "column_break_mdst",
+  "reference_doc_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Process",
+   "length": 20,
+   "options": "\nLamination 1\nLamination 2\nLamination 3\nLamination 4\nLamination 5\nLamination 6\nLamination 7\nLamination 8\nLamination 9\nLamination 10",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ptkk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_rm",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Position",
+   "length": 50,
+   "options": "\nInner Liner - Inner Material 1\nInner Liner - Outer Liner\nInner Material 1 - Inner Material 2\nInner Material 1 - Outer Liner\nInner Material 2 - Inner Material 3\nInner Material 2 - Outer Liner\nInner Material 3 - Inner Material 4\nInner Material 3 - Outer Liner\nInner Material 4 - Inner Material 5\nInner Material 4 - Outer Liner\nInner Material 5 - Inner Material 6\nInner Material 5 - Outer Liner\nInner Material 6 - Inner Material 7\nInner Material 6 - Outer Liner\nInner Material 7 - Inner Material 8\nInner Material 7 - Outer Liner\nInner Material 8 - Inner Material 9\nInner Material 8 - Outer Liner\nInner Material 9 - Outer Liner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dnej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_per_meter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cost Per Meter",
+   "length": 20
+  },
+  {
+   "fieldname": "cost_per_cup",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cost Per Cup",
+   "length": 20
+  },
+  {
+   "fieldname": "lamination_for",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Lamination for",
+   "length": 20,
+   "options": "\nFabric\nFoam\nCookie\nTricot\nMetal Wire\nTpu Wire",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_hnwx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "detail",
+   "fieldtype": "Button",
+   "label": "Detail <i class=\"fa fa-arrow-right\"></i>"
+  },
+  {
+   "fieldname": "column_break_mdst",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_doc_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "reference_doc_name",
+   "length": 60
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-13 14:47:46.860012",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Material Processing",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

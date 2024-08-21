@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:size",
+ "creation": "2024-07-31 15:28:49.811396",
+ "default_view": "Report",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "size",
+  "section_break_ebyw",
+  "kd_l",
+  "kd_w",
+  "pd_l",
+  "pd_w",
+  "column_break_hvuo",
+  "md_l",
+  "md_w",
+  "type_mold",
+  "section_break_rsmc",
+  "pq_l",
+  "pq_w",
+  "consumption",
+  "column_break_cejy",
+  "qty_per_m_prs",
+  "qty_foam_cup_prs",
+  "qty_foam_cup_per_m_prs"
+ ],
+ "fields": [
+  {
+   "fieldname": "size",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Size",
+   "options": "Size",
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_ebyw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "kd_l",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kegel Dimension (Cm) L"
+  },
+  {
+   "fieldname": "pd_l",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Panel Dimension (Cm) L"
+  },
+  {
+   "fieldname": "md_l",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Material Dimension (Cm) L"
+  },
+  {
+   "fieldname": "column_break_hvuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kd_w",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kegel Dimension (Cm) W"
+  },
+  {
+   "fieldname": "pd_w",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Panel Dimension (Cm) W"
+  },
+  {
+   "fieldname": "md_w",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Material Dimension (Cm) W"
+  },
+  {
+   "fieldname": "section_break_rsmc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pq_l",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Panel Qty L"
+  },
+  {
+   "fieldname": "consumption",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Consumption"
+  },
+  {
+   "default": "2",
+   "fieldname": "qty_foam_cup_prs",
+   "fieldtype": "Data",
+   "label": "Qty Foam Cup (Prs)"
+  },
+  {
+   "fieldname": "column_break_cejy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pq_w",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Panel Qty W"
+  },
+  {
+   "fieldname": "qty_per_m_prs",
+   "fieldtype": "Data",
+   "label": "Qty/M (Prs)"
+  },
+  {
+   "fieldname": "qty_foam_cup_per_m_prs",
+   "fieldtype": "Data",
+   "label": "Qty Foam Cup/M (Prs)"
+  },
+  {
+   "fieldname": "type_mold",
+   "fieldtype": "Select",
+   "label": "Type Mold",
+   "options": "One Up\nTwo Up\nFour Up\nSix Up\nEight Up"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-14 16:45:27.957652",
+ "modified_by": "Administrator",
+ "module": "Costing for Accessories",
+ "name": "Consumption",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Costing Accessories User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
