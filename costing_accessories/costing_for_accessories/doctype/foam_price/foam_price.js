@@ -12,6 +12,7 @@ frappe.ui.form.on("Foam Price", {
 
     
     after_save(frm) {
+        var name = frm.doc.name;
         var article = frm.doc.article;
 
         // Insert Material Article
@@ -23,6 +24,21 @@ frappe.ui.form.on("Foam Price", {
                 frappe.db.insert({
                     doctype: 'Material Article',
                     article: article
+                }).then(doc => {
+                    console.log(doc);
+                });
+            }
+        });
+
+        // Insert Material Article
+        frappe.db.exists('Material Article', name)
+        .then(exists => {
+            console.log(exists); // true
+            console.log(name)
+            if (!exists) {
+                frappe.db.insert({
+                    doctype: 'Material Article',
+                    article: name
                 }).then(doc => {
                     console.log(doc);
                 });
