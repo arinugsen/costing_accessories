@@ -535,6 +535,21 @@ frappe.ui.form.on('Raw Material Manual', {
         } else {
             // set_total_raw_material_cost(frm);
         }
+
+	// Insert Material Article
+        frappe.db.exists('Material Article', article)
+        .then(exists => {
+            console.log(exists); // true
+            console.log(article)
+            if (!exists) {
+                frappe.db.insert({
+                    doctype: 'Material Article',
+                    article: article
+                }).then(doc => {
+                    console.log(doc);
+                });
+            }
+        });
     },
 
     cost_per_meter(frm, cdt, cdn) {
@@ -609,6 +624,21 @@ frappe.ui.form.on('Raw Material Manual', {
                 cost_per_cup = cost_per_cup.toString() + "1";
                 frappe.model.set_value(cdt, cdn, "cost_per_cup", parseFloat(cost_per_cup).toFixed(3));
             }
+
+		// Insert Material Article
+	        frappe.db.exists('Material Article', article)
+	        .then(exists => {
+	            console.log(exists); // true
+	            console.log(article)
+	            if (!exists) {
+	                frappe.db.insert({
+	                    doctype: 'Material Article',
+	                    article: article
+	                }).then(doc => {
+	                    console.log(doc);
+	                });
+	            }
+	        });
         }
 
         // Calculate Total Raw Material Cost
