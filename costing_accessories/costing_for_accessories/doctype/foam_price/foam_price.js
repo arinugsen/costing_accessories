@@ -14,6 +14,9 @@ frappe.ui.form.on("Foam Price", {
     after_save(frm) {
         var name = frm.doc.name;
         var article = frm.doc.article;
+        var thickness = frm.doc.thickness;
+        var ttk = article +" "+ thickness +"MM";
+        var type_of_price = frm.doc.type_of_price;
 
         // Insert Material Article
         frappe.db.exists('Material Article', article)
@@ -29,6 +32,23 @@ frappe.ui.form.on("Foam Price", {
                 });
             }
         });
+
+        // Insert Material Article
+        if (thickness != "" && thickness > 0 && type_of_price == "Per Mili Meter") {
+            frappe.db.exists('Material Article', ttk)
+            .then(exists => {
+                console.log(exists); // true
+                console.log(ttk)
+                if (!exists) {
+                    frappe.db.insert({
+                        doctype: 'Material Article',
+                        article: ttk
+                    }).then(doc => {
+                        console.log(doc);
+                    });
+                }
+            });   
+        }
 
         // Insert Material Article
         frappe.db.exists('Material Article', name)
