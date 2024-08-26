@@ -11,6 +11,17 @@ frappe.ui.form.on("Foam Price", {
     },
 
     
+    before_save(frm) {
+        var name = frm.doc.name;
+        var article = frm.doc.article;
+        var thickness = frm.doc.thickness;
+        var ttk = article +" "+ thickness +"MM";
+        var type_of_price = frm.doc.type_of_price;
+
+        // Insert Material Article
+        set_material_article(ttk);
+    },
+
     after_save(frm) {
         var name = frm.doc.name;
         var article = frm.doc.article;
@@ -19,48 +30,46 @@ frappe.ui.form.on("Foam Price", {
         var type_of_price = frm.doc.type_of_price;
 
         // Insert Material Article
-        frappe.db.exists('Material Article', article)
+        frappe.db.exists('Material Article', ttk)
         .then(exists => {
             console.log(exists); // true
-            console.log(article)
+            console.log(ttk)
             if (!exists) {
                 frappe.db.insert({
                     doctype: 'Material Article',
-                    article: article
+                    article: ttk
                 }).then(doc => {
                     console.log(doc);
-                });
-            }
-        });
 
-        // Insert Material Article
-        if (thickness != "" && thickness > 0 && type_of_price == "Per Mili Meter") {
-            frappe.db.exists('Material Article', ttk)
-            .then(exists => {
-                console.log(exists); // true
-                console.log(ttk)
-                if (!exists) {
-                    frappe.db.insert({
-                        doctype: 'Material Article',
-                        article: ttk
-                    }).then(doc => {
-                        console.log(doc);
+                    // Insert Material Article
+                    frappe.db.exists('Material Article', article)
+                    .then(exists => {
+                        console.log(exists); // true
+                        console.log(article)
+                        if (!exists) {
+                            frappe.db.insert({
+                                doctype: 'Material Article',
+                                article: article
+                            }).then(doc => {
+                                console.log(doc);
+                            });
+                        }
                     });
-                }
-            });   
-        }
-
-        // Insert Material Article
-        frappe.db.exists('Material Article', name)
-        .then(exists => {
-            console.log(exists); // true
-            console.log(name)
-            if (!exists) {
-                frappe.db.insert({
-                    doctype: 'Material Article',
-                    article: name
-                }).then(doc => {
-                    console.log(doc);
+                });
+            } else {
+                // Insert Material Article
+                frappe.db.exists('Material Article', article)
+                .then(exists => {
+                    console.log(exists); // true
+                    console.log(article)
+                    if (!exists) {
+                        frappe.db.insert({
+                            doctype: 'Material Article',
+                            article: article
+                        }).then(doc => {
+                            console.log(doc);
+                        });
+                    }
                 });
             }
         });
@@ -68,6 +77,22 @@ frappe.ui.form.on("Foam Price", {
     
 });
 
+function set_material_article(article){
+    // Insert Material Article
+    frappe.db.exists('Material Article', article)
+    .then(exists => {
+        console.log(exists); // true
+        console.log(article)
+        if (!exists) {
+            frappe.db.insert({
+                doctype: 'Material Article',
+                article: article
+            }).then(doc => {
+                console.log(doc);
+            });
+        }
+    });
+}
 
 function set_price_visibility(frm){
     var type_of_price = frm.doc.type_of_price;
