@@ -9,15 +9,7 @@
  "field_order": [
   "size",
   "no",
-  "column_break_feyi",
-  "section_break_rdyj",
-  "kd_l",
-  "pd_l",
-  "md_l",
-  "column_break_vwcn",
-  "kd_w",
-  "pd_w",
-  "md_w"
+  "column_break_feyi"
  ],
  "fields": [
   {
@@ -25,52 +17,6 @@
    "fieldtype": "Data",
    "label": "Size",
    "unique": 1
-  },
-  {
-   "fieldname": "kd_l",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Kegel Dimension (Cm) L"
-  },
-  {
-   "fieldname": "kd_w",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Kegel Dimension (Cm) W"
-  },
-  {
-   "fieldname": "pd_l",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Panel Dimension (Cm) L"
-  },
-  {
-   "fieldname": "pd_w",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Panel Dimension (Cm) W"
-  },
-  {
-   "fieldname": "md_l",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Material Dimension (Cm) L"
-  },
-  {
-   "fieldname": "md_w",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Material Dimension (Cm) W"
-  },
-  {
-   "fieldname": "section_break_rdyj",
-   "fieldtype": "Section Break",
-   "hidden": 1
-  },
-  {
-   "fieldname": "column_break_vwcn",
-   "fieldtype": "Column Break",
-   "hidden": 1
   },
   {
    "fieldname": "column_break_feyi",
@@ -85,7 +31,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-14 13:39:56.993279",
+ "modified": "2024-08-26 08:44:54.134349",
  "modified_by": "Administrator",
  "module": "Costing for Accessories",
  "name": "Size",
