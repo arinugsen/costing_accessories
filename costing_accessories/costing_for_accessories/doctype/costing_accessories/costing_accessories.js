@@ -697,11 +697,11 @@ frappe.ui.form.on('Raw Material', {
 
     classification(frm, cdt, cdn) {
         var row = frappe.get_doc(cdt, cdn);
+        var child = locals[cdt][cdn];
         var type = row.type;
         var classification = row.classification;
         
         if (classification == "Fabric") {
-            var child = locals[cdt][cdn];
             // frm.set_df_property('table_raw_material', 'hidden', 0, frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'fieldtype', "Link", frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'options', "Fabric Price", frm.docname, 'article', child.name);
@@ -714,7 +714,6 @@ frappe.ui.form.on('Raw Material', {
             // table_field - Field Inside the child table
             // table_row_name - name of the row | child.name
 
-            var child = locals[cdt][cdn];
             // frm.set_df_property('table_raw_material', 'hidden', 1, frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'fieldtype', "Link", frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'options', "Foam Price", frm.docname, 'article', child.name);
@@ -722,12 +721,14 @@ frappe.ui.form.on('Raw Material', {
 
             console.log(frm); console.log(frm.docname); console.log(child.name); console.log(cdt); console.log(cdn);
 
-        // } else if (classification=="Cookie" && classification=="Tricot" || classification=="Metal Wire" || classification=="Tpu Wire") {
-        } else {
-            var child = locals[cdt][cdn];
+        } else if (classification=="Cookie" && classification=="Tricot" || classification=="Metal Wire" || classification=="Tpu Wire") {
             // frm.set_df_property('table_raw_material', 'hidden', 1, frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
+        } else {
+            // frm.set_df_property('table_raw_material', 'hidden', 1, frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'fieldtype', "Link", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'options', "Material Article", frm.docname, 'article', child.name);
         } 
     },
 
@@ -794,20 +795,8 @@ frappe.ui.form.on('Raw Material', {
             // set_total_raw_material_cost(frm);
         }
 
-	// Insert Material Article
-        frappe.db.exists('Material Article', article)
-        .then(exists => {
-            console.log(exists); // true
-            console.log(article)
-            if (!exists) {
-                frappe.db.insert({
-                    doctype: 'Material Article',
-                    article: article
-                }).then(doc => {
-                    console.log(doc);
-                });
-            }
-        });
+        // Insert Material Article
+        set_material_article(article);
     },
 
     cost_per_meter(frm, cdt, cdn) {
@@ -839,40 +828,12 @@ frappe.ui.form.on('Raw Material', {
                 frappe.model.set_value(cdt, cdn, "cost_per_cup", parseFloat(cost_per_cup).toFixed(3));
             }
 
-            // Insert Material Article
-            frappe.db.exists('Material Article', article)
-            .then(exists => {
-                console.log(exists); // true
-                console.log(article)
-                if (!exists) {
-                    frappe.db.insert({
-                        doctype: 'Material Article',
-                        article: article
-                    }).then(doc => {
-                        console.log(doc);
-                    });
-                }
-            });
         } else if (classification=="Tricot" || classification=="Metal Wire" || classification=="Tpu Wire") {
             var child = locals[cdt][cdn];
             // frm.set_df_property('table_raw_material', 'hidden', 0, frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
-            
-            // Insert Material Article
-            frappe.db.exists('Material Article', article)
-            .then(exists => {
-                console.log(exists); // true
-                console.log(article)
-                if (!exists) {
-                    frappe.db.insert({
-                        doctype: 'Material Article',
-                        article: article
-                    }).then(doc => {
-                        console.log(doc);
-                    });
-                }
-            });
+
         } else if (classification=="Fabric" || classification=="Foam") {   // dibagi Pairs/Meter
             var pairs_per_meter = frm.doc.pairs_per_meter;
             var cost_per_cup = cost_per_meter / pairs_per_meter;
@@ -882,23 +843,10 @@ frappe.ui.form.on('Raw Material', {
                 cost_per_cup = cost_per_cup.toString() + "1";
                 frappe.model.set_value(cdt, cdn, "cost_per_cup", parseFloat(cost_per_cup).toFixed(3));
             }
-
-		// Insert Material Article
-		frappe.db.exists('Material Article', article)
-		.then(exists => {
-		    console.log(exists); // true
-		    console.log(article)
-		    if (!exists) {
-			frappe.db.insert({
-			    doctype: 'Material Article',
-			    article: article
-			}).then(doc => {
-			    console.log(doc);
-			});
-		    }
-		});
         }
 
+        // Insert Material Article
+        set_material_article(article);
         // Calculate Total Raw Material Cost
         // set_total_raw_material_cost(frm);
 
@@ -909,6 +857,23 @@ frappe.ui.form.on('Raw Material', {
         set_total_raw_material_cost(frm);
     },
 });
+
+function set_material_article(article){
+    // Insert Material Article
+    frappe.db.exists('Material Article', article)
+    .then(exists => {
+        console.log(exists); // true
+        console.log(article)
+        if (!exists) {
+            frappe.db.insert({
+                doctype: 'Material Article',
+                article: article
+            }).then(doc => {
+                console.log(doc);
+            });
+        }
+    });
+}
 
 function set_total_raw_material_cost(frm) {
     // frm: current ToDo form
