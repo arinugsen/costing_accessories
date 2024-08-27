@@ -686,7 +686,19 @@ frappe.ui.form.on('Raw Material', {
     },
     // Triggered when a row is opened as a form in a Table field
     form_render(frm, cdt, cdn) {
-        // var row = frappe.get_doc(cdt, cdn);
+        var child = locals[cdt][cdn];
+        var row = frappe.get_doc(cdt, cdn);
+        var classification = row.classification;
+        if (classification == "Fabric") {
+            frm.set_df_property('table_raw_material', 'fieldtype', "Link", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'options', "Fabric Price", frm.docname, 'article', child.name);
+        } else if (classification == "Foam") {
+            frm.set_df_property('table_raw_material', 'fieldtype', "Link", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'options', "Foam Price", frm.docname, 'article', child.name);
+        } else {
+            frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
+        }
         set_total_raw_material_cost(frm);
 	},
 
@@ -727,8 +739,8 @@ frappe.ui.form.on('Raw Material', {
             frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
         } else {
             // frm.set_df_property('table_raw_material', 'hidden', 1, frm.docname, 'article', child.name);
-            frm.set_df_property('table_raw_material', 'fieldtype', "Link", frm.docname, 'article', child.name);
-            frm.set_df_property('table_raw_material', 'options', "Material Article", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
         } 
     },
 
@@ -738,6 +750,7 @@ frappe.ui.form.on('Raw Material', {
         var type = row.type;
         var classification = row.classification;
         var article = row.article;
+        console.log(article);
         
         if (classification == "Fabric") {
             // frappe.db.get_value(doctype, name, fieldname)
@@ -780,7 +793,7 @@ frappe.ui.form.on('Raw Material', {
                     cost_per_meter = price_custom;
                     frappe.model.set_value(cdt, cdn, "cost_per_meter", cost_per_meter);
                 }
-    
+                
                 var pairs_per_meter = frm.doc.pairs_per_meter;
                 var cost_per_cup = cost_per_meter / pairs_per_meter;
                 console.log(cost_per_cup);
@@ -792,6 +805,13 @@ frappe.ui.form.on('Raw Material', {
                 // set_total_raw_material_cost(frm);
             });
         } else {
+            frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
+            
+            article = row.article;
+            console.log("article cookie");
+            console.log(article);
+            
             // set_total_raw_material_cost(frm);
         }
 
@@ -807,10 +827,11 @@ frappe.ui.form.on('Raw Material', {
         var type = row.type;
         var classification = row.classification;
         var article = row.article;
+        console.log(article);
         var cost_per_meter = row.cost_per_meter;
 
         if (classification == "Cookie") {   // dibagi Cookie Pairs/Meter
-            var child = locals[cdt][cdn];
+            // var child = locals[cdt][cdn];
             // frm.set_df_property('table_raw_material', 'hidden', 0, frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
@@ -829,7 +850,7 @@ frappe.ui.form.on('Raw Material', {
             }
 
         } else if (classification=="Tricot" || classification=="Metal Wire" || classification=="Tpu Wire") {
-            var child = locals[cdt][cdn];
+            // var child = locals[cdt][cdn];
             // frm.set_df_property('table_raw_material', 'hidden', 0, frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
@@ -859,6 +880,7 @@ frappe.ui.form.on('Raw Material', {
 });
 
 function set_material_article(article){
+    console.log(article);
     // Insert Material Article
     frappe.db.exists('Material Article', article)
     .then(exists => {
