@@ -469,8 +469,8 @@ frappe.ui.form.on('Raw Material Manual', {
             frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
         } else {
             // frm.set_df_property('table_raw_material', 'hidden', 1, frm.docname, 'article', child.name);
-            frm.set_df_property('table_raw_material', 'fieldtype', "Link", frm.docname, 'article', child.name);
-            frm.set_df_property('table_raw_material', 'options', "Material Article", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
         } 
     },
 
@@ -534,6 +534,13 @@ frappe.ui.form.on('Raw Material Manual', {
                 // set_total_raw_material_cost(frm);
             });
         } else {
+            frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
+            
+            article = row.article;
+            console.log("article cookie");
+            console.log(article);
+            
             // set_total_raw_material_cost(frm);
         }
 
@@ -575,7 +582,7 @@ frappe.ui.form.on('Raw Material Manual', {
             // frm.set_df_property('table_raw_material', 'hidden', 0, frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
-
+            
         } else if (classification=="Fabric" || classification=="Foam") {   // dibagi Pairs/Meter
             var pairs_per_meter = frm.doc.pairs_per_meter;
             var cost_per_cup = cost_per_meter / pairs_per_meter;
@@ -585,6 +592,7 @@ frappe.ui.form.on('Raw Material Manual', {
                 cost_per_cup = cost_per_cup.toString() + "1";
                 frappe.model.set_value(cdt, cdn, "cost_per_cup", parseFloat(cost_per_cup).toFixed(3));
             }
+
         }
 
         // Insert Material Article
