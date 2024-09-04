@@ -45,6 +45,10 @@ frappe.ui.form.on("Costing Accessories", {
         set_reference_doc_name(frm);
 	},
 
+    onload_post_render(frm) {
+	    frm.set_df_property("heading_gara", "label", " ");
+	},
+
     validate(frm) {
         set_reference_doc_name(frm);
     },
@@ -552,10 +556,11 @@ function set_total_overhead_cost(frm) {
 
         var type_overhead = frm.doc.type_overhead;
         if (type_overhead == "Basic") { frm.set_value("total_overhead_cost", basic); }
-        if (type_overhead == "Push Up") { frm.set_value("total_overhead_cost", push_up); }
-        if (type_overhead == "Insert Wire") { frm.set_value("total_overhead_cost", insert_wire); }
-        if (type_overhead == "Spacer") { frm.set_value("total_overhead_cost", spacer); }
-        if (type_overhead == "Manual Spray") { frm.set_value("total_overhead_cost", manual_spray); }
+        else if (type_overhead == "Push Up") { frm.set_value("total_overhead_cost", push_up); }
+        else if (type_overhead == "Insert Wire") { frm.set_value("total_overhead_cost", insert_wire); }
+        else if (type_overhead == "Spacer") { frm.set_value("total_overhead_cost", spacer); }
+        else if (type_overhead == "Manual Spray") { frm.set_value("total_overhead_cost", manual_spray); }
+        else { frm.set_value("total_overhead_cost", "0"); }
     });
 }
 
