@@ -30,9 +30,12 @@ frappe.ui.form.on("Foam Price", {
         var type_of_price = frm.doc.type_of_price;
 
         // Insert Material Article
+        console.log("ttk");
+        console.log(ttk);
         frappe.db.exists('Material Article', ttk)
         .then(exists => {
             console.log(exists); // true
+            console.log("ttk");
             console.log(ttk)
             if (!exists) {
                 frappe.db.insert({
@@ -45,6 +48,7 @@ frappe.ui.form.on("Foam Price", {
                     frappe.db.exists('Material Article', article)
                     .then(exists => {
                         console.log(exists); // true
+                        console.log("article");
                         console.log(article)
                         if (!exists) {
                             frappe.db.insert({
@@ -61,6 +65,7 @@ frappe.ui.form.on("Foam Price", {
                 frappe.db.exists('Material Article', article)
                 .then(exists => {
                     console.log(exists); // true
+                    console.log("article");
                     console.log(article)
                     if (!exists) {
                         frappe.db.insert({
