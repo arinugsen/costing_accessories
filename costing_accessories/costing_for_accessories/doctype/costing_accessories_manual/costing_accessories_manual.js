@@ -28,6 +28,11 @@ frappe.ui.form.on("Costing Accessories Manual", {
         });
 	},
 
+    onload_post_render(frm) {
+	    frm.set_df_property("heading_lbqb", "label", " ");
+	},
+    
+
     size_range_1(frm) {
         set_size_range(frm)
     },
@@ -295,10 +300,11 @@ function set_total_overhead_cost(frm) {
 
         var type_overhead = frm.doc.type_overhead;
         if (type_overhead == "Basic") { frm.set_value("total_overhead_cost", basic); }
-        if (type_overhead == "Push Up") { frm.set_value("total_overhead_cost", push_up); }
-        if (type_overhead == "Insert Wire") { frm.set_value("total_overhead_cost", insert_wire); }
-        if (type_overhead == "Spacer") { frm.set_value("total_overhead_cost", spacer); }
-        if (type_overhead == "Manual Spray") { frm.set_value("total_overhead_cost", manual_spray); }
+        else if (type_overhead == "Push Up") { frm.set_value("total_overhead_cost", push_up); }
+        else if (type_overhead == "Insert Wire") { frm.set_value("total_overhead_cost", insert_wire); }
+        else if (type_overhead == "Spacer") { frm.set_value("total_overhead_cost", spacer); }
+        else if (type_overhead == "Manual Spray") { frm.set_value("total_overhead_cost", manual_spray); }
+        else { frm.set_value("total_overhead_cost", "0"); }
     });
 }
 
@@ -428,7 +434,19 @@ frappe.ui.form.on('Raw Material Manual', {
     },
     // Triggered when a row is opened as a form in a Table field
     form_render(frm, cdt, cdn) {
-        // var row = frappe.get_doc(cdt, cdn);
+        var child = locals[cdt][cdn];
+        var row = frappe.get_doc(cdt, cdn);
+        var classification = row.classification;
+        if (classification == "Fabric") {
+            frm.set_df_property('table_raw_material', 'fieldtype', "Link", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'options', "Fabric Price", frm.docname, 'article', child.name);
+        } else if (classification == "Foam") {
+            frm.set_df_property('table_raw_material', 'fieldtype', "Link", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'options', "Foam Price", frm.docname, 'article', child.name);
+        } else {
+            frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
+            frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
+        }
         set_total_raw_material_cost(frm);
 	},
 
@@ -471,7 +489,7 @@ frappe.ui.form.on('Raw Material Manual', {
             // frm.set_df_property('table_raw_material', 'hidden', 1, frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'fieldtype', "Data", frm.docname, 'article', child.name);
             frm.set_df_property('table_raw_material', 'options', "", frm.docname, 'article', child.name);
-        } 
+        }
     },
 
     article(frm, cdt, cdn) {
@@ -540,7 +558,7 @@ frappe.ui.form.on('Raw Material Manual', {
             article = row.article;
             console.log("article cookie");
             console.log(article);
-            
+
             // set_total_raw_material_cost(frm);
         }
 
