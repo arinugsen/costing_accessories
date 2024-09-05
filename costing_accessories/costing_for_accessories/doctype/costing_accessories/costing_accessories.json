@@ -8,10 +8,10 @@
  "field_order": [
   "date",
   "article",
-  "style",
   "column_break_opay",
   "revision",
   "buyer",
+  "style",
   "column_break_qjnj",
   "size_range_1",
   "size_range_2",
@@ -101,6 +101,8 @@
    "label": "Size Range 1",
    "length": 10,
    "options": "Size",
+   "print_hide": 1,
+   "report_hide": 1,
    "reqd": 1
   },
   {
@@ -109,6 +111,8 @@
    "label": "Size Range 2",
    "length": 10,
    "options": "Size",
+   "print_hide": 1,
+   "report_hide": 1,
    "reqd": 1
   },
   {
@@ -179,7 +183,8 @@
    "fieldtype": "Select",
    "label": "Type Overhead",
    "length": 20,
-   "options": "\nBasic\nPush Up\nInsert Wire\nSpacer\nManual Spray"
+   "options": "\nBasic\nPush Up\nInsert Wire\nSpacer\nManual Spray",
+   "reqd": 1
   },
   {
    "fieldname": "total_overhead_cost",
@@ -305,13 +310,16 @@
   },
   {
    "fieldname": "heading_gara",
-   "fieldtype": "Heading"
+   "fieldtype": "Heading",
+   "label": " ",
+   "print_hide": 1,
+   "report_hide": 1
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 08:14:59.086718",
+ "modified": "2024-09-05 15:54:31.982648",
  "modified_by": "Administrator",
  "module": "Costing for Accessories",
  "name": "Costing Accessories",
