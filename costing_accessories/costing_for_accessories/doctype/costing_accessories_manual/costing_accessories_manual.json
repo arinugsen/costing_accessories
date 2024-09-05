@@ -8,10 +8,10 @@
  "field_order": [
   "date",
   "article",
-  "style",
   "column_break_jksn",
   "revision",
   "buyer",
+  "style",
   "column_break_ypun",
   "size_range_1",
   "size_range_2",
@@ -93,14 +93,18 @@
    "fieldtype": "Link",
    "label": "Size Range 1",
    "length": 10,
-   "options": "Size"
+   "options": "Size",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "size_range_2",
    "fieldtype": "Link",
    "label": "Size Range 2",
    "length": 10,
-   "options": "Size"
+   "options": "Size",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "size_range",
@@ -275,20 +279,25 @@
   },
   {
    "fieldname": "heading_lbqb",
-   "fieldtype": "Heading"
+   "fieldtype": "Heading",
+   "label": " ",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "reference_doc_name",
    "fieldtype": "Data",
    "hidden": 1,
    "label": "reference_doc_name",
-   "length": 60
+   "length": 60,
+   "print_hide": 1,
+   "report_hide": 1
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 08:15:38.282815",
+ "modified": "2024-09-05 16:11:56.100816",
  "modified_by": "Administrator",
  "module": "Costing for Accessories",
  "name": "Costing Accessories Manual",
